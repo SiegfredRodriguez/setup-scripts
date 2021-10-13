@@ -17,5 +17,5 @@ bash -c "docker run -d --name <CONTAINER_NAME> \
 -e POSTGRES_USER=<USER> \
 -e POSTGRES_PASSWORD=<PASSWORD> \
 -e POSTGRES_DB=<DB_NAME> \
--e PG_DATA=/var/lib/postgresql/data/pgdata \
+-e PGDATA=/var/lib/postgresql/data/pgdata \
 -v <HOST_MOUNT_POINT>:/var/lib/postgresql/data -p <HOST_PORT>:5432 postgres"
